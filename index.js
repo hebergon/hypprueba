@@ -25,7 +25,18 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout:1500,
     autoplayHoverPause:true,
-    autoHeight:true
+    autoHeight:true,
+    responsive: {
+            0: {
+                items: 3
+            },
+            800: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
 });
     $(window).load(function(){
         // isotope filter
