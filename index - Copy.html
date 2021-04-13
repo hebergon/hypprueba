@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- start #header -->
+    <header id="header">
+        <!--<div class="strip d-flex justify-content-between px-4 py-1 color-gray">
+            <p class="font-rale font-size-12 text-black-90 m-0">Blvd. Manuel Gómez Morín 8809, Bermúdez, Cd Juárez, Chih.</p>
+            <div class="font-rale font-size-14">
+                <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+                <a href="#" class="px-3 border-right text-dark">Wishlist (0)</a>
+            </div>
+        </div>
+    -->
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002554;">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img id="logo" src="./assets/logoazul.png" style="width: 150px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav font-roboto ml-auto font-size-18 text-white">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown" style="background-color: #002554;">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" href="#">Productos </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Almacenamiento</a>
+                            <a class="dropdown-item" href="#">Bombeo</a>
+                            <a class="dropdown-item" href="#">Filtración</a>
+                            <a class="dropdown-item" href="#">Contra Incencio</a>
+                            <a class="dropdown-item" href="#">Plomería Industrial</a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Quiénes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="noticias.html" class="nav-link">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+        <!-- !Nav -->
+
+    </header>
+    <!-- !start #header -->
+    
+    <!-- start #main -->
+    <main id="main-site">
+        <!-- Carrusel -->
+        <section id="banner-area">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./assets/Banner1.png" alt="banner1">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/banneragua.png" alt="banner2">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/bannerbomba.png" alt="banner3">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/banner4.png" alt="banner3">
+                    </div>
+                </div>
+        </section>
+        <!-- !Carrusel -->
+            
+        <!-- Categorias -->
+        
+        <section id="topsale">
+            <div class="container">
+                <h4>Más vendidos</h4>
+                <div id="filters" class="button-group text-right font-lato">
+                    <button class="btn is-checked" data-filter="*">Todo</button>
+                    <button class="btn" data-filter=".Almacenamiento">Almacenamiento</button>
+                    <button class="btn" data-filter=".Bombeo">Bombeo</button>
+                    <button class="btn" data-filter=".Filtracion">Filtración</button>
+                    <button class="btn" data-filter=".Incendios">Contra Incendio</button>
+                    <button class="btn" data-filter=".Industrial">Industrial</button>
+                </div>
+                <div class="grid text-center">
+                    <div class="row mb-2">
+                        <div class="grid-item Almacenamiento col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/tanque.png" alt="" class="img-fluid">
+                            </a>
+                            <h6>Tanque</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Bombeo col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/bomba.png" alt="" class="img-fluid">
+                            </a>
+                            <h6>Bomba</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Filtracion col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/purificador.jpg" alt="" class="img-fluid">
+                            </a>
+                            <h6>Purificador</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Incendios col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/valvula.png" alt="" class="img-fluid">
+                            </a>
+                            <h6>Válvula</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Industrial col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/mariposa.jpg" alt="" class="img-fluid">
+                            </a>
+                            <h6>Mariposa</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="row">
+                        <div class="grid-item Industrial col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/mariposa.jpg" alt="" class="img-fluid">
+                            </a>
+                            <h6>Mariposa</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Incendios col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/valvula.png" alt="" class="img-fluid">
+                            </a>
+                            <h6>Válvula</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Filtracion col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/purificador.jpg" alt="" class="img-fluid">
+                            </a>
+                            <h6>Purificador</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Bombeo col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/bomba.png" alt="" class="img-fluid">
+                            </a>
+                            <h6>Bomba</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                        <div class="grid-item Almacenamiento col-sm-4 col-md-3 col-lg-5ths col-6">
+                            <a href="#">
+                                <img src="./assets/tanque.png" alt="" class="img-fluid">
+                            </a>
+                            <h6>Tanque</h6>
+                            <button type="submit" class="btn btn-warning font-size-12">Ver información</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="col-sm-12 pad-0"></div>
+        </section>
+
+        
+        
+
+        <!-- !Categorias -->
+        <br>
+        <!-- Lo más nuevo -->
+        <section id="blogs">
+            <div class="container py-4 mx-auto">
+                <h4 class="font-roboto font-size-20">Lo más nuevo</h4>
+                <hr>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0 font-lato text-black-50 font-size-16 mr-5" style="width: 18rem;">
+                            <h5 class="card-title font-size-18">Noticia</h5>
+                            <img src="./assets/blog1.png" alt="blog1" class="card-img-top">
+                            <p class="card-text text-black-50 py-1">SJE-Rhombus ofrece una variedad de soluciones para aplicaciones residenciales, comerciales e industriales.
+                            </p>
+                            <ul class="card-text  text-black-50 py-1">
+                                <li>
+                                    Paneles de control con control de bomba y notificacion de alarma en un solo paquete
+                                </li>
+                                <li>
+                                    Controles de presion constante que mantienen la presion de bombas trifasicas
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 font-lato text-black-50 font-size-16 mr-5" style="width: 18rem;">
+                            <h5 class="card-title font-size-18">Noticia</h5>
+                            <img src="./assets/blog2.png" alt="blog2" class="card-img-top">
+                            <p class="card-text text-black-50 py-1">Weil tiene una linea completa de bombas para aguas residuales, incluyendo trituradoras, opcion en acero inoxidable o con recubrimiento, <br>asi como equipos armados con tablero electrico y switches de nivel.
+                               <br> La mejor calidad de bombas!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 font-lato text-black-50 font-size-16 mr-5" style="width: 18rem;">
+                            <h5 class="card-title font-size-18">Noticia</h5>
+                            <img src="./assets/blog3.jpg" alt="blog3" class="card-img-top">
+                            <p class="card-text text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores necessitatibus molestias, deleniti maiores animi reprehenderit quae voluptatum obcaecati minus vero accusantium expedita doloremque tempore commodi ratione repellat eum! Minima!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- !Lo más nuevo -->
+    </main>
+    <!-- !start #main -->
+
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <h4 class="font-rubik font-size-20">Hidrodinámica y Proyectos de Juárez</h4>
+                    <p class="font-size-14 font-rale text-white-50">Hola qué tal</p>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <h4 class="font-rubik font-size-20">Noticias</h4>
+                    <form class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary mb-2">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h4 class="font-rubik font-size-20">Información</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Acerca de Nosotros</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Contacto</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacidad</a>
+                        <a href="./mapa.html" class="font-rale font-size-14 text-white-50 pb-1">Mapa</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      
+
+    </footer>
+    <!-- !start #footer -->
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Animación -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
+    <!-- JS del Carrusel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+    <!-- Isotope -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+
+    <!-- Custom JS File -->
+    <script src="./index.js"></script>
+
+
+</body>
+</html>

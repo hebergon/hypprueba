@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Mountain Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0700
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0600
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Heber González";RSVP=TRUE:mailto:hebergon2311@gmail.com
+CLASS:PUBLIC
+CREATED:20210223T174446Z
+DESCRIPTION:Buen día Heber \, la programamos para mañana a las 8:30 am\, 
+	te mando la invitación de una vez.\n\nUnirse a la reunión Zoom \nhttps:/
+	/us04web.zoom.us/j/73102314561?pwd=YjBhWXVtVVprdEF0bzdTQ3NLM0pmZz09 \n\nID
+	 de reunión: 731 0231 4561 \nCódigo de acceso: aL4dzN \n\n
+DTEND;TZID="Mountain Standard Time":20210224T090000
+DTSTAMP:20210223T174446Z
+DTSTART;TZID="Mountain Standard Time":20210224T083000
+LAST-MODIFIED:20210223T174446Z
+LOCATION:https://us04web.zoom.us/j/73102314561?pwd=YjBhWXVtVVprdEF0bzdTQ3NL
+	M0pmZz09
+ORGANIZER;CN="Luis Peña":mailto:cxc@hidrodinamicayproyectos.com
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=es-mx:Zoom meeting invitation - Reunión de Zoom de Luis P
+	eña Pereyra
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E0080000000040FF839DD009D701000000000000000
+	010000000939B6E742F1D3044BF7A22A2EDE8AC0E
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml" 
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-mic
+	rosoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/
+	12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Co
+	ntent-Type content="text/html\; charset=iso-8859-1"><meta name=Generator c
+	ontent="Microsoft Word 15 (filtered medium)"><style><!--\n/* Font Definiti
+	ons */\n@font-face\n	{font-family:"Cambria Math"\;\n	panose-1:2 4 5 3 5 4 
+	6 3 2 4\;}\n@font-face\n	{font-family:Calibri\;\n	panose-1:2 15 5 2 2 2 4 
+	3 2 4\;}\n/* Style Definitions */\na:link\, span.MsoHyperlink\n	{mso-style
+	-priority:99\;\n	color:blue\;\n	text-decoration:underline\;}\nspan.EstiloC
+	orreo18\n	{mso-style-type:personal-compose\;}\n.MsoChpDefault\n	{mso-style
+	-type:export-only\;\n	font-size:10.0pt\;}\n@page WordSection1\n	{size:612.
+	0pt 792.0pt\;\n	margin:70.85pt 3.0cm 70.85pt 3.0cm\;}\ndiv.WordSection1\n	
+	{page:WordSection1\;}\n--></style><!--[if gte mso 9]><xml>\n<o:shapedefaul
+	ts v:ext="edit" spidmax="1026" />\n</xml><![endif]--><!--[if gte mso 9]><x
+	ml>\n<o:shapelayout v:ext="edit">\n<o:idmap v:ext="edit" data="1" />\n</o:
+	shapelayout></xml><![endif]--></head><body lang=ES-MX link=blue vlink=purp
+	le style='word-wrap:break-word'><div class=WordSection1><p>Buen día Heber
+	 \, la programamos para mañana a las 8:30 am\, te mando la invitación de
+	 una vez.<o:p></o:p></p><p>Unirse a la reunión Zoom <br><a href="https://
+	us04web.zoom.us/j/73102314561?pwd=YjBhWXVtVVprdEF0bzdTQ3NLM0pmZz09">https:
+	//us04web.zoom.us/j/73102314561?pwd=YjBhWXVtVVprdEF0bzdTQ3NLM0pmZz09</a> <
+	o:p></o:p></p><p>ID de reunión: 731 0231 4561 <br>Código de acceso: aL4d
+	zN <o:p></o:p></p></div></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-AUTOSTARTCHECK:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+

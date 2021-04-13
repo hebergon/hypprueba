@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/*     Sass Template    */
+/* clases globales */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.card {
+  border: none;
+}
+
+.cardd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 0.0625rem solid #E5E7EB;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  #somos {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  #somos {
+    display: none;
+  }
+
+  #nos {
+    display: none;
+  }
+}
+.container-fluid {
+  padding: 1em;
+}
+
+#navbarb {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+
+/* Clases de tipografias */
+.font-shadows {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-roboto {
+  font-family: "Roboto", cursive;
+}
+
+.font-lato {
+  font-family: "Lato", cursive;
+}
+
+.font-monse {
+  font-family: "Montserrat", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Colores */
+.primary-color {
+  color: #003859;
+}
+
+.primary-color-bg {
+  background: #003859;
+}
+
+.secondary-color {
+  color: #EBF5FB;
+}
+
+.secondary-color-bg {
+  background: #EBF5FB;
+}
+
+.color-gray {
+  background: #c7c7c7;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.azul {
+  color: #0272e2;
+}
+
+.fondo-azul {
+  background-color: #0272e2;
+}
+
+#frame {
+  max-width: 100%;
+  height: 100%;
+}
+
+.logo-small {
+  color: #003859;
+  font-size: 50px;
+}
+
+.logo {
+  color: #003859;
+  font-size: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logogde {
+  max-height: fit-content;
+}
+
+.bg-grey {
+  background-color: #F2F4F4;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+#navbar2.navbar-nav li a:hover, #navbar2.nav-link li.active a {
+  color: #fff !important;
+  background-color: #003859 !important;
+}
+
+#navbar2.navbar li a, #navbar2.navbar #navbar2.navbar-brand {
+  color: #003859 !important;
+}
+
+#navbar2 {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+
+#navbar2.navbar-nav li a.active {
+  border-bottom: 2px solid #003859;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    text-align: center;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #FFF;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid black;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+/*# sourceMappingURL=style.css.map */
