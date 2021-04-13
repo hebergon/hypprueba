@@ -27,16 +27,16 @@ $(document).ready(function(){
     autoplayHoverPause:true,
     autoHeight:true,
     responsive: {
-            0: {
-                items: 3
-            },
-            800: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
+      0: {
+          items :3
+      },
+      500: {
+          items: 4
+      },
+      800: {
+        items: 5
+      }
+    }
 });
     $(window).load(function(){
         // isotope filter
