@@ -22,58 +22,70 @@
 
     <!-- start #header -->
     <header id="header">
+        <div class="strip text-right px-4 py-1 white">
+            <p class="font-monse font-size-12 text-black-90 m-0">Blvd. Manuel Gómez Morín 8809, Bermúdez, Cd Juárez, Chih.</p>
+            
+        </div>
         <!-- Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light white">
-          <div class="container">
-              <a class="navbar-brand" href="#"><img id="logo" src="./assets/logoazul.png" style="width: 150px;"></a>
-              
-              <h1 class="font-shadows azul" id="somos" style="letter-spacing: 2px;"><strong>¡Somos Hidrodinámica!</strong></h1>
-          </div>
-        </nav>
-      </nav>
-      <nav class="navbar navbar-expand-lg navbar-dark fondo-azul sticky-top">
         <div class="container">
-            <a class="navbar-brand font-monse" href="#myPage">Grupo Hidrodinámica</a>
+            <div class="row center">
+                
+                <div class="col-sm-6 col-12">
+                
+                    <a href="index.php"><img id="logo" src="./assets/logoazul.png" style="width: 150px;"></a>
+                    <br>
+                </div>
+                <div class="col-sm-6 col-12 text-right">
+                    <h1 class="font-shadows azul" id="somos" style="letter-spacing: 2px;"><strong>¡Somos Hidrodinámica!</strong></h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <nav class="navbar navbar-expand-lg navbar-dark fondo-azul sticky-top" id="navegacion">
+        <div class="container">
+            <a class="navbar-brand font-monse" href="index.php">Grupo Hidrodinámica</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav font-monse ml-auto font-size-18 text-white-50" id="navbarb">
-                    <li>
-                        <a class="nav-link rounded" href="index.html">Inicio</a>
-                    </li>
                     <li class="nav-item dropdown fondo-azul">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" href="productos.html">Productos </a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" href="#">Productos </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="letter-spacing: 1px;">
-                            <a class="dropdown-item" href="#">Almacenamiento</a>
-                            <a class="dropdown-item" href="#">Bombeo</a>
-                            <a class="dropdown-item" href="#">Filtración</a>
-                            <a class="dropdown-item" href="#">Contra Incencio</a>
-                            <a class="dropdown-item" href="#">Plomería Industrial</a>
+                            <a class="dropdown-item" href="productos.php">Todos</a>
+                            <a class="dropdown-item" href="productos2.php?val='bombas'">Bombas</a>
+                            <a class="dropdown-item" href="productos2.php?val='piscina'">Piscinas</a>
+                            <a class="dropdown-item" href="productos2.php?val='filtracion'">Filtración</a>
+                            <a class="dropdown-item" href="productos2.php?val='incendios'">Contra Incendio</a>
+                            <a class="dropdown-item" href="productos2.php?val='almacenamiento'">Almacenamiento</a>
+                            <a class="dropdown-item" href="productos2.php?val='tratamiento'">Tratamiento</a>
                         </div>
                     </li>
                     <li>
-                        <a class="nav-link rounded" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link rounded" href="nosotros.php">Nosotros</a>
                     </li>
                     <li>
-                        <a class="nav-link rounded" href="noticias.html">Noticias</a>
+                        <a class="nav-link rounded" href="contactanos.php">Contacto</a>
                     </li>
                     <li>
-                        <a class="nav-link rounded" href="marcas.html">Marcas</a>
+                        <a class="nav-link rounded" href="noticias.php">Noticias</a>
                     </li>
                     <li>
-                        <a class="nav-link rounded" href="galeria.html">Galería</a>
+                        <a class="nav-link rounded" href="marcas.php">Marcas</a>
                     </li>
                     <li>
-                        <a class="nav-link rounded active" href="#">Ir a tienda</a>
+                        <a class="nav-link rounded" href="galeria.php">Galería</a>
+                    </li>
+                    <li>
+                        <a class="nav-link rounded" style="color: white;" href="#">Ir a tienda</a>
                     </li>
                 </ul>
             </div>
         </div>
-      </nav>
+        </nav>
         <!-- !Nav -->
-    </header>
 
+    </header>
     <main>
         <section id="top">
             <div class="jumbotron text-center font-monse fondo-azul text-white rounded-0 mb-0">
@@ -152,28 +164,36 @@
     
         <!-- start #footer -->
         <footer id="footer" class="bg-dark text-white py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-6">
-                        <h4 class="font-rubik font-size-20">Hidrodinámica y Proyectos de Juárez</h4>
-                        <p class="font-size-14 font-rale text-white-50">Hola qué tal</p>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <span class="fab fa-facebook logo-small" style="color: white; float: left; height: auto; width: auto;"></span>
-                        <p class="font-size-14 font-monse text-white-50" style="float: left; height: auto; width: auto;">Encuéntranos en Facebook</p>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <h4 class="font-rubik font-size-20">Información</h4>
-                        <div class="d-flex flex-column flex-wrap">
-                            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Acerca de Nosotros</a>
-                            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Contacto</a>
-                            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacidad</a>
-                            <a href="./mapa.html" class="font-rale font-size-14 text-white-50 pb-1">Mapa</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h4 class="font-monse font-size-20">Hidrodinámica y Proyectos de Juárez</h4>
+                    
+                    
+                </div>
+                <div class="col-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 center justify-content-center">
+                                <span class="fab fa-facebook py-3" id="fb"></span>    
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <p class="font-size-18 font-monse">Encuéntranos en Facebook</p>
+                                <div class="font-lato font-size-16" id="links">
+                                    <a href="https://www.facebook.com/hidrodinamicayproyectosdejuarez" target="_blank">HyP de Juárez</a><br>
+                                    <a href="https://www.facebook.com/hidrodinamicadelpacifico" target="_blank">Hidrodinámica del Pacífico</a><br>
+                                    <a href="https://www.facebook.com/PYTJrz" target="_blank">Proyectos y Tratamientos de Juárez</a>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
+                    
+                    
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
         <!-- !start #footer -->
         
     
