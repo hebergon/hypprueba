@@ -3,28 +3,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 /*     Sass Template    */
+
 /* clases globales */
+.center {
+  display: flex;
+  align-items: center;
+}
+.center-horizontal {
+  text-align: center;
+}
+
+#frame {
+  max-width: 100%;
+  height: 100%;
+}
+
+.logo-small {
+  color: #003859;
+  font-size: 50px;
+}
+
+.logo {
+  color: #003859;
+  font-size: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logogde {
+  max-height: fit-content;
+}
+
 button, button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 
-.card {
-  border: none;
+.container-fluid {
+  padding: 1em;
 }
 
-.cardd {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #ffffff;
-  background-clip: border-box;
-  border: 0.0625rem solid #E5E7EB;
-  border-radius: 1rem;
+.container-fluid {
+  padding: 60px 50px;
 }
 
+/* Responsive */
 @media (min-width: 1200px) {
   .col-lg-5ths {
     width: 20%;
@@ -45,9 +69,27 @@ button, button:focus {
     display: none;
   }
 }
-.container-fluid {
-  padding: 1em;
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .card {
+    text-align: center;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+
+/* Barras de navegación */
 
 #navbarb {
   margin-bottom: 0;
@@ -56,6 +98,28 @@ button, button:focus {
   line-height: 1.42857143 !important;
   letter-spacing: 2px;
   border-radius: 0;
+}
+
+#navbar2.navbar-nav li a:hover, #navbar2.nav-link li.active a {
+  color: #fff !important;
+  background-color: #003859 !important;
+}
+
+#navbar2.navbar li a, #navbar2.navbar #navbar2.navbar-brand {
+  color: #003859 !important;
+}
+
+#navbar2 {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+
+#navbar2.navbar-nav li a.active {
+  border-bottom: 2px solid #003859;
 }
 
 /* Clases de tipografias */
@@ -140,32 +204,12 @@ button, button:focus {
   background-color: #0272e2;
 }
 
-#frame {
-  max-width: 100%;
-  height: 100%;
-}
-
-.logo-small {
-  color: #003859;
-  font-size: 50px;
-}
-
-.logo {
-  color: #003859;
-  font-size: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#logogde {
-  max-height: fit-content;
-}
 
 .bg-grey {
   background-color: #F2F4F4;
 }
 
+/* Animaciones */
 .slideanim {
   visibility: hidden;
 }
@@ -198,53 +242,10 @@ button, button:focus {
     -webkit-transform: translateY(0%);
   }
 }
-@media screen and (max-width: 768px) {
-  .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-  }
 
-  .btn-lg {
-    width: 100%;
-    margin-bottom: 35px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .logo {
-    font-size: 150px;
-  }
-}
-#navbar2.navbar-nav li a:hover, #navbar2.nav-link li.active a {
-  color: #fff !important;
-  background-color: #003859 !important;
-}
 
-#navbar2.navbar li a, #navbar2.navbar #navbar2.navbar-brand {
-  color: #003859 !important;
-}
 
-#navbar2 {
-  margin-bottom: 0;
-  z-index: 9999;
-  border: 0;
-  line-height: 1.42857143 !important;
-  letter-spacing: 2px;
-  border-radius: 0;
-}
-
-#navbar2.navbar-nav li a.active {
-  border-bottom: 2px solid #003859;
-}
-
-.container-fluid {
-  padding: 60px 50px;
-}
-
-@media screen and (max-width: 770px) {
-  .card {
-    text-align: center;
-  }
-}
+/* Botones */
 .button {
   display: inline-block;
   padding: 0.5em 1em;
@@ -262,7 +263,8 @@ button, button:focus {
 
 .button:active,
 .button.is-checked {
-  background-color: #28F;
+  background-color: #0272e2;
+  color: white;
 }
 
 .button.is-checked {
@@ -274,4 +276,96 @@ button, button:focus {
   box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
 }
 
-/*# sourceMappingURL=style.css.map */
+
+/* Estilo a las tarjertas */
+.card {
+  border: none;
+}
+
+.cardd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 0.0625rem solid #E5E7EB;
+  border-radius: 1rem;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 0;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Galería */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.border-gray-300 {
+  border-color: #E5E7EB !important;
+}
+
+/* Estilo de logo facebook */
+.fab {
+  
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+#links a{
+  color: white;
+  opacity: 0.5;
+}
+
+
+
